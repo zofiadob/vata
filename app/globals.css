@@ -18,19 +18,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Krub', sans-serif;
 }
 
 body {
   color: rgb(var(--white));
   background: linear-gradient(to bottom,
   rgb(var(--main-violet)) 75%, rgb(var(--white)));
-  font-family: 'Krub', sans-serif;
 }
 
 .container{
   scroll-snap-type:  y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: calc(100vh - 4.5rem);
 }
 
 section{
@@ -44,3 +44,46 @@ section{
 nav{
  background: rgb(var(--menu-white))
 }
+
+.menu-white{
+  background: rgb(var(--menu-white));
+}
+
+a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+li a {
+  overflow: hidden;
+}
+
+li a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+li a:hover::after,
+li a:focus::after{
+  transform: translate3d(0, 0, 0);
+}
+
