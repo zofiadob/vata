@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className='flex justify-between px-8 md:px-28 py-2 sticky min-h-16'>
-      <div className=''>
+      <div>
         <Link href="">
           <Image src={Logo} alt='Logo' />
         </Link>

@@ -2,7 +2,11 @@ import React from 'react'
 
 function IntroductionSection() {
   return (
-    <section>IntroductionSection</section>
+    <section>
+      <div>
+        IntroductionSection
+      </div>
+    </section>
   )
 }
 

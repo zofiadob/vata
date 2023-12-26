@@ -2,7 +2,12 @@ import React from 'react'
 
 function HeaderSection() {
   return (
-    <section>HeaderSection</section>
+    <section>
+      <div className='flex'>
+        <div>1</div>
+        <div>2</div>
+      </div>
+    </section>
   )
 }
 
