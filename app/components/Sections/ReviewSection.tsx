@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 function ReviewSection() {
   return (
-    <section>ReviewSection</section>
+    <section>
+      <div>
+        ReviewSection
+      </div>
+    </section>
   )
 }
 
-export default ReviewSection
+export default ReviewSection;

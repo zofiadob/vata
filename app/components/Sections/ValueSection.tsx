@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 function ValueSection() {
   return (
-    <section>ValueSection</section>
+    <section>
+      <div>
+        ValueSection
+      </div>
+    </section>
   )
 }
 
-export default ValueSection
+export default ValueSection;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 function IntroductionSection() {
   return (
@@ -10,4 +10,4 @@ function IntroductionSection() {
   )
 }
 
-export default IntroductionSection
+export default IntroductionSection;

@@ -2,8 +2,12 @@ import React from 'react'
 
 function FormSection() {
   return (
-    <section>FormSection</section>
+    <section>
+      <div>
+        FormSection
+      </div>
+    </section>
   )
 }
 
-export default FormSection
+export default FormSection;
