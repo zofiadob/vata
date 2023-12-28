@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Header from './components/Navbar'
 import HeaderSection from './components/Sections/HeaderSection'
 import IntroductionSection from './components/Sections/IntroductionSection'
 import ValueSection from './components/Sections/ValueSection'

@@ -89,8 +89,18 @@ section{
 
 section > div{
   animation: fade-up 0.5s;
+  transition: transform 2s;
 }
 
+.content-fade-in{
+  transform: translate(0);
+  opacity: 1;
+}
+
+.content-fade-out{
+  transform: translate(-100%);
+  opacity: 0;
+}
 
 section:nth-of-type(1){
   background-color: blueviolet;
