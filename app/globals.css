@@ -25,7 +25,24 @@ body {
   color: rgb(var(--white));
   background: linear-gradient(to bottom,
   rgb(var(--main-violet)) 75%, rgb(var(--white)));
+  scrollbar-color: rgb(var(--main-violet)) rgb(var(--white));
+  scrollbar-width: thin;
 }
+
+::-webkit-scrollbar {
+ width: 0.4rem;
+ background-color: white;
+ border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--white));
+ }
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--main-violet));
+  border-radius: 5px;
+ }
 
 @keyframes fade-down {
 
