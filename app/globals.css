@@ -14,38 +14,55 @@
   --white: 225, 225, 255;
 }
 
-*{
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Krub', sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: '"Krona One"';
+    src: url(../public/fonts/KronaOne-Regular.ttf) format('ttf');
+}
+
+  html {
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+}
+
+h1{
+  font-family: 'Krona One', 'sans-serif';
+  }
+
+h1{
+  font-family: 'Krona One', 'sans-serif';
 }
 
 body {
   color: rgb(var(--white));
   background: linear-gradient(to bottom,
-  rgb(var(--main-violet)) 75%, rgb(var(--white)));
+      rgb(var(--main-violet)) 75%, rgb(var(--white)));
   scrollbar-color: rgb(var(--main-violet)) rgb(var(--white));
   scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
- width: 0.4rem;
- background-color: white;
- border-radius: 5px;
+  width: 0.4rem;
+  background-color: white;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
   background: rgb(var(--white));
- }
+}
 
 ::-webkit-scrollbar-thumb {
   background: rgb(var(--main-violet));
   border-radius: 5px;
- }
+}
 
 @keyframes fade-down {
-
   0% {
     opacity: 0;
     transform: translateY(-30px) scale(1);
@@ -55,58 +72,56 @@ body {
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
-
 }
 
-.container{
-  scroll-snap-type:  y mandatory;
+.header{
+  font-family: 'Krona One', sans-serif;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: calc(100vh - 4.9rem);
 }
 
-section{
+section {
   height: calc(100vh - 4.9rem);
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-  background-color: brown;
 }
 
 section > div{
   transition: transform 1s;
 }
 
-.content-fade-out{
-  transform: translate(-200%);
+.content-fade-out {
+  transform: translate(-100%);
   opacity: 0;
 }
 
-section:nth-of-type(1){
-  background-color: blueviolet;
-}
-
-section:nth-of-type(2){
+section:nth-of-type(2) {
   background-color: rgb(12, 84, 129);
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
   background-color: rgb(94, 156, 0);
 }
 
-section:nth-of-type(4){
+section:nth-of-type(4) {
   background-color: rgb(158, 147, 43);
 }
 
-nav{
- background: rgb(var(--menu-white))
+nav {
+  background: rgb(var(--menu-white))
 }
 
-nav > div {
+nav>div {
   animation: fade-down 1s;
 }
 
-.menu-white{
+.menu-white {
   background: rgb(var(--menu-white));
 }
 
@@ -144,7 +159,6 @@ li a::after {
 }
 
 li a:hover::after,
-li a:focus::after{
+li a:focus::after {
   transform: translate3d(0, 0, 0);
 }
-
