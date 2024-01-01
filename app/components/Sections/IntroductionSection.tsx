@@ -11,15 +11,18 @@ function IntroductionSection() {
 
   return (
     <section id='introduction' className='px-8 md:px-28 py-10'>
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 items-center gap-20'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-12 lg:gap-20'>
+        <div className='flex justify-center md:hidden'>
+          <Image className='w-1/2 sm:max-w-72' src={aboutImage} alt='About image' />
+        </div>
         <div className='flex flex-wrap justify-center md:justify-end'>
-          <div className='mb-6'>
+          <div className='mb-6 grid grid-cols-1 gap-8'>
             <Header text={HeaderText} align='left' />
             <Text text={desciptionText} />
           </div>
         </div>
-        <div className='flex justify-center'>
-          <Image className='w-2/3 md:w-full h-1/2' src={aboutImage} alt='About image' />
+        <div className='hidden md:flex justify-center'>
+          <Image className='w-3/4' src={aboutImage} alt='About image' />
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ function Header({ text, align }: Props) {
     }
 
     return (
-        <h1 className={`text-4xl md:text-5xl text-center w-full ${alignVariants[align]} font-krona leading-tight`}>{text}</h1>
+        <h1 className={`text-3xl md:text-4xl lg:text-5xl text-center w-full ${alignVariants[align]} font-krona leading-tight`}>{text}</h1>
     )
 }
 
