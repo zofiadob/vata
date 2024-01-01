@@ -19,7 +19,7 @@ function IntroductionSection() {
           </div>
         </div>
         <div className='flex justify-center'>
-          <Image className='w-2/3 md:w-full' src={aboutImage} alt='About image' />
+          <Image className='w-2/3 md:w-full h-1/2' src={aboutImage} alt='About image' />
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ interface Props {
 
 function Text({ text }: Props) {
     return (
-        <div className='text-lg'>{text}</div>
+        <div className='text-8'>{text}</div>
     )
 }
 
