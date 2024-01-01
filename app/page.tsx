@@ -22,7 +22,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="container max-w-full">
+    <main className="container max-w-full font-krub">
       <HeaderSection />
       <IntroductionSection />
       <ValueSection />

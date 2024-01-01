@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <nav className='bg-menu-violet flex justify-between px-8 md:px-28 py-2 sticky min-h-16'>
+    <nav className='bg-menu-violet flex justify-between px-8 md:px-28 py-2 sticky min-h-16 font-krub'>
       <div>
         <Link href="">
           <Image src={Logo} alt='Logo' />
