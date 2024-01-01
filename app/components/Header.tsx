@@ -7,7 +7,7 @@ interface Props {
 
 function Header({ text, align }: Props) {
 
-    const alignVariants ={
+    const alignVariants = {
         left: 'md:text-left',
         right: 'md:text-right',
     }
