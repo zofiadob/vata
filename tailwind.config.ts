@@ -22,7 +22,7 @@ const config: Config = {
         'white': '#ffffff',
         'main-violet': '#6C63FF',
         'light-violet': '#A19BFF',
-        'lighter-violet': '#CCC9FF',
+        'menu-violet': '#7B73FF',
         'dark-grey': '#414141',
         'disabled-grey': '#B1B1B1',
       }

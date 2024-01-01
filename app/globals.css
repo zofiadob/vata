@@ -45,6 +45,7 @@ body {
       rgb(var(--main-violet)) 75%, rgb(var(--white)));
   scrollbar-color: rgb(var(--main-violet)) rgb(var(--white));
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -119,10 +120,6 @@ nav {
 
 nav>div {
   animation: fade-down 1s;
-}
-
-.menu-white {
-  background: rgb(var(--menu-white));
 }
 
 a {

@@ -1,12 +1,19 @@
 import React from 'react'
 
 interface Props {
-    text: string
+    text: string,
+    align: "left" | "right",
 }
 
-function Header({ text }: Props) {
+function Header({ text, align }: Props) {
+
+    const alignVariants ={
+        left: 'md:text-left',
+        right: 'md:text-right',
+    }
+
     return (
-        <h1 className="text-4xl md:text-5xl text-center md:text-left font-krona">{text}</h1>
+        <h1 className={`text-4xl md:text-5xl text-center w-full ${alignVariants[align]} font-krona`}>{text}</h1>
     )
 }
 
