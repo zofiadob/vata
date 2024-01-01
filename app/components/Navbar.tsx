@@ -24,7 +24,7 @@ function Navbar() {
       {isOpen &&
         <div className='bg-menu-violet md:bg-transparent duration-500 md:static absolute md:min-h-fit left-0 top-[100%] md:w-auto w-full flex justify-center md:justify-normal items-center px-5'>
           <ul className='flex gap-8 md:gap-2 justify-between items-center lg:w-1/3 md:flex-row flex-col py-4 md:py-0'>
-            <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>About</Link></li>
+            <li><Link href="#introduction" className='link px-4 font-bold xl:text-lg md:text-md'>About</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Values</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Pricing</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Contact</Link></li>
