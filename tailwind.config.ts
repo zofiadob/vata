@@ -7,6 +7,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'krona': ['"Krona One"', 'sans-serif'],
+      'krub': ['Krub', 'sans-serif'],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -17,10 +21,10 @@ const config: Config = {
         transparent: 'transparent',
         'white': '#ffffff',
         'main-violet': '#6C63FF',
-        'light-violet': '161, 155, 255',
-        'lighter-violet': '204, 201, 255',
-        'dark-grey': '65, 65, 65',
-        'disabled-grey': '177, 177, 177',
+        'light-violet': '#A19BFF',
+        'menu-violet': '#7B73FF',
+        'dark-grey': '#414141',
+        'disabled-grey': '#B1B1B1',
       }
     },
   },

@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 
 function IntroductionSection() {
   return (
-    <section>
+    <section id="introduction">
       <div>
         IntroductionSection
       </div>
