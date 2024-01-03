@@ -81,10 +81,6 @@ section>div {
   opacity: 0;
 }
 
-section:nth-of-type(3) {
-  background-color: rgb(94, 156, 0);
-}
-
 section:nth-of-type(4) {
   background-color: rgb(158, 147, 43);
 }
