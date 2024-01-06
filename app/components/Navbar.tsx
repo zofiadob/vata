@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <nav className='bg-menu-violet flex justify-between px-8 md:px-28 py-2 sticky min-h-16 font-krub z-10'>
       <div>
-        <Link href="">
+        <Link href="#header">
           <Image src={Logo} alt='Logo' />
         </Link>
       </div>
@@ -25,7 +25,7 @@ function Navbar() {
         <div className='bg-menu-violet md:bg-transparent duration-500 md:static absolute md:min-h-fit left-0 top-[100%] md:w-auto w-full flex justify-center md:justify-normal items-center px-5'>
           <ul className='flex gap-8 md:gap-2 justify-between items-center lg:w-1/3 md:flex-row flex-col py-4 md:py-0'>
             <li><Link href="#introduction" className='link px-4 font-bold xl:text-lg md:text-md'>About</Link></li>
-            <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Values</Link></li>
+            <li><Link href="#values" className='link px-4 font-bold xl:text-lg md:text-md'>Values</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Pricing</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Contact</Link></li>
           </ul>
