@@ -35,18 +35,7 @@ function ReviewSection() {
         <div className='grid grid-cols-1'>
           <Header text={HeaderText} align='left' />
         </div>
-        <div className=''>
-          {/* {
-            reviews.map(review => (
-              <div key={review.company} className='bg-white text-main-violet rounded-2xl py-6 px-6 lg:px-14 text-left'>
-                <div className='text-md font-bold md:text-xl lg:text-2xl mb-1 md:mb-4'>{review.owner}</div>
-                <div className='text-sm md:text-md mb-4'>{review.desc}</div>
-                <div className='text-xs text-light-violet text-right md:text-md'>{review.company}</div>
-              </div>
-            ))
-          } */}
-          <Carousel reviews={reviews} />
-        </div>
+        <Carousel reviews={reviews} />
       </div>
     </section>
   )
