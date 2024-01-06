@@ -11,7 +11,7 @@ function HeaderSection() {
   const text = "Empowering Decisions: Your Data-Driven Future Starts Here"
 
   return (
-    <section className='px-8 md:px-28 py-10 relative'>
+    <section id='header' className='px-8 md:px-28 py-10 relative'>
       <div className='grid sm:grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-12 lg:gap-20'>
         <div className='flex justify-center'>
           <Image className='w-2/3 sm:max-w-72 md:max-w-full md:w-full' src={headerImage} alt='Header image' />
