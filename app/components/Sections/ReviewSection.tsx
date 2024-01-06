@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header';
+import Carousel from '../Carousel';
 
 function ReviewSection() {
 
@@ -30,12 +31,12 @@ function ReviewSection() {
 
   return (
     <section id='values' className='px-8 md:px-28 py-10'>
-      <div className='grid sm:grid-cols-1 items-center gap-5 md:gap-12'>
+      <div className='grid sm:grid-cols-1 items-center gap-5 md:gap-12 w-full'>
         <div className='grid grid-cols-1'>
           <Header text={HeaderText} align='left' />
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8'>
-          {
+        <div className=''>
+          {/* {
             reviews.map(review => (
               <div key={review.company} className='bg-white text-main-violet rounded-2xl py-6 px-6 lg:px-14 text-left'>
                 <div className='text-md font-bold md:text-xl lg:text-2xl mb-1 md:mb-4'>{review.owner}</div>
@@ -43,7 +44,8 @@ function ReviewSection() {
                 <div className='text-xs text-light-violet text-right md:text-md'>{review.company}</div>
               </div>
             ))
-          }
+          } */}
+          <Carousel reviews={reviews} />
         </div>
       </div>
     </section>
