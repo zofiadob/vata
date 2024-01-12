@@ -18,7 +18,7 @@ function CustomButton({ variant, text, clickTo }: Props) {
   return (
     <Link
       href={clickTo}
-      className='p-4 w-full border-radiu rounded-2xl md:text-xl cursor-pointer font-bold transition 1s border-solid border-2 border-main-violet bg-white text-center text-main-violet hover:bg-light-violet hover:text-white after:bg-transparent'>
+      className='p-2 w-full border-radiu rounded-2xl md:text-xl cursor-pointer font-bold transition 1s border-solid border-2 border-main-violet bg-white text-center text-main-violet hover:bg-light-violet hover:text-white after:bg-transparent'>
       {text}
     </Link>
   )

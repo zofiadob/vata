@@ -27,7 +27,7 @@ function Navbar() {
             <li><Link href="#introduction" className='link px-4 font-bold xl:text-lg md:text-md'>About</Link></li>
             <li><Link href="#values" className='link px-4 font-bold xl:text-lg md:text-md'>Values</Link></li>
             <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Pricing</Link></li>
-            <li><Link href="" className='link px-4 font-bold xl:text-lg md:text-md'>Contact</Link></li>
+            <li><Link href="form" className='link px-4 font-bold xl:text-lg md:text-md'>Contact</Link></li>
           </ul>
         </div>
       }
