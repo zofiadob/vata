@@ -14,7 +14,14 @@ export default function Input({ value, changeValue, placeholder, longField = fal
     return (
         <>
             {longField ?
-                (<textarea className={style} rows={5} cols={80} id="message" placeholder={placeholder} value={value} />) :
+                (<textarea
+                    className={style}
+                    rows={5}
+                    cols={80}
+                    id="message"
+                    placeholder={placeholder}
+                    onChange={(event) => { changeValue(event.currentTarget.value) }}
+                    value={value} />) :
                 (<div className='m-1'>
                     <input
                         className={style}
