@@ -19,7 +19,7 @@ function HeaderSection() {
         <div className='flex flex-wrap justify-center md:justify-end'>
           <div className='mb-12'><Header text={headertext} align='right' /></div>
           <div className='w-1/2 md:w-full lg:w-1/2'>
-            <CustomButton variant='normal' text="Show more" clickTo='#introduction' />
+            <CustomButton variant='outline' text="Show more" clickTo='#introduction' />
           </div>
         </div>
       </div>
