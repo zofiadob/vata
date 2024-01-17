@@ -18,7 +18,7 @@ export default function Input({ value, changeValue, placeholder, longField = fal
                     className={style}
                     rows={5}
                     cols={80}
-                    id="message"
+                    id={placeholder}
                     placeholder={placeholder}
                     onChange={(event) => { changeValue(event.currentTarget.value) }}
                     value={value} />) :
@@ -26,6 +26,8 @@ export default function Input({ value, changeValue, placeholder, longField = fal
                     <input
                         className={style}
                         value={value}
+                        required
+                        id={placeholder}
                         placeholder={placeholder}
                         onChange={(event) => { changeValue(event.currentTarget.value) }} />
                 </div>)
