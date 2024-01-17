@@ -13,12 +13,12 @@ function Form() {
     const [spinner, setSpinner] = useState(false)
 
     //simulation of sending message
-    const submit = (e) => {
+    const submit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setSpinner(true);
         setTimeout(() => {
             setSend(true)
-        }, 1000);
+        }, 1500);
     }
 
     return (
