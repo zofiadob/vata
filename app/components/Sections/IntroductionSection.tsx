@@ -6,7 +6,7 @@ import Text from '../Text';
 
 function IntroductionSection() {
 
-  const HeaderText = 'Who are we?'
+  const headerText = 'Who are we?'
   const desciptionText = 'Welcome to Vata, where we pioneer data analysis solutions to fuel your business growth. Our mission is to transform raw data into actionable intelligence, guiding you toward informed decisions and unprecedented success in the digital age.'
 
   return (
@@ -17,7 +17,7 @@ function IntroductionSection() {
         </div>
         <div className='flex flex-wrap justify-center md:justify-end'>
           <div className='mb-6 grid grid-cols-1 gap-8'>
-            <Header text={HeaderText} align='left' />
+            <Header text={headerText} align='left' />
             <Text text={desciptionText} />
           </div>
         </div>

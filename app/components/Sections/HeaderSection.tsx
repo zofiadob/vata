@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 function HeaderSection() {
 
-  const text = "Empowering Decisions: Your Data-Driven Future Starts Here"
+  const headertext = "Empowering Decisions: Your Data-Driven Future Starts Here"
 
   return (
     <section id='header' className='px-8 md:px-28 py-10 relative'>
@@ -17,9 +17,9 @@ function HeaderSection() {
           <Image className='w-2/3 sm:max-w-72 md:max-w-full md:w-full' src={headerImage} alt='Header image' />
         </div>
         <div className='flex flex-wrap justify-center md:justify-end'>
-          <div className='mb-12'><Header text={text} align='right' /></div>
+          <div className='mb-12'><Header text={headertext} align='right' /></div>
           <div className='w-1/2 md:w-full lg:w-1/2'>
-            <CustomButton variant='normal' text="Show more" clickTo='#introduction' />
+            <CustomButton variant='outline' text="Show more" clickTo='#introduction' />
           </div>
         </div>
       </div>

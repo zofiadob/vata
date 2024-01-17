@@ -4,7 +4,7 @@ import Carousel from '../Carousel';
 
 function ReviewSection() {
 
-  const HeaderText = 'Opinions from our Clients'
+  const headerText = 'Opinions from our Clients'
 
   const reviews = [
     {
@@ -33,7 +33,7 @@ function ReviewSection() {
     <section id='values' className='px-8 md:px-28 py-10'>
       <div className='grid sm:grid-cols-1 items-center gap-5 md:gap-12 w-full'>
         <div className='grid grid-cols-1'>
-          <Header text={HeaderText} align='left' />
+          <Header text={headerText} align='left' />
         </div>
         <Carousel reviews={reviews} />
       </div>
